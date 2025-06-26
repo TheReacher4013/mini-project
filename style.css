@@ -1,0 +1,62 @@
+body {
+    margin : 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #f0f8ff url('nature.jpg') no-repeat center/100% auto fixed;
+    color: #db3131;
+}
+.blog-post{
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 20px 20px 10px rgba(7, 230, 230, 0.5);
+    
+}
+.blog-post h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    padding-top: 10px;
+
+}
+/* Decorative ::before */
+.blog-post h1::before {
+    content: "📝";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+}
+
+/* Intro Paragraph */
+.blog-post .intro {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Main Paragraphs */
+.blog-post p {
+    text-align: justify;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Footer Styling */
+.blog-post footer {
+    background-image: linear-gradient(to right, #e0f7fa, #f0f8ff);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.blog-post footer p {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: right;
+    margin: 0; 
+}
