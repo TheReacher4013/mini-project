@@ -1,0 +1,67 @@
+.dashboard{
+    display:grid;
+    grid-template-areas:
+    "image image sidebar"
+    "headline headline sidebar"
+    "dashmain dashmain sidebar"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px150px auto 100px;
+    gap: 10%;
+    padding: 20px;
+}
+.image {
+    background-color: #add8e6;
+
+    grid-column: span2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline {
+    background-color: #90ee90;
+    grid-column: span 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-ad {
+    background-color: #ffcccb;
+    grid-column: 3;
+    grid-row: 1/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.dashmain{
+    grid-area: dashmain;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.featuredcard{
+    background:#eee;
+    padding: 20px;
+    font-weight: bold;
+    grid-column: span 2;
+    text-align: center;
+}
+.card{
+    background: #f0f0f0;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

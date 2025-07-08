@@ -1,0 +1,38 @@
+/* .container{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding:20px;
+
+}
+.sidebar-left{
+    background-color: rgba(33, 168, 94, 0.322);
+    padding: 10px;
+
+}
+.sidebar-right{
+    background-color: aqua;
+    padding:10px;
+}
+.main-content{
+    background-color: rgb(169, 13, 13);
+    padding:10px;
+}
+challenge1 */
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    padding:20px;
+}
+.card{
+    background-color: #335bb893;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    place-content: center;
+    font-weight: bold;;
+}
+
+
