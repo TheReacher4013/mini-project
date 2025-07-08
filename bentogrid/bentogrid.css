@@ -1,0 +1,25 @@
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80vh;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:nth-child(1){
+    background-color: bisque;
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+div:nth-last-child(1){
+    background-color: rgb(110, 69, 14);
+    /* grid-column: 2/3;
+    grid-row: 3/4; */
+    grid-area: 3/2/4/3;
+    z-index: 1;
+}
