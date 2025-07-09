@@ -42,7 +42,7 @@ div{
     animation: circle;
     animation-duration: 5s;
     animation-delay: 5s;
-    animation-timing-function: linear;
+    animation-timing-function:ease-in-out;
     animation-iteration-count: infinite;
 
 }
@@ -53,21 +53,24 @@ div{
         border-radius: 0%;
         background-color: rgba(135, 8, 8, 1);
         transform: translate(150px, 170px);
+        opacity: 1;
     }
     50%{
         border-radius: 50%;
         background-color: rgba(8, 135, 8, 1);
         transform: translate(170px, 190px);
+        opacity: 0.3;
     }
-    75%{
+    /* 75%{
         border-radius: 25%;
         background-color: rgba(8, 8, 135, 1);
         transform: translate(190px, 170px);
-    }
+    } */
     100%{
         border-radius: 0%;
         background-color: rgba(135, 8, 8, 1);
         transform: translate(150px, 150px);
+        opacity: 1;
     }
 
 }
